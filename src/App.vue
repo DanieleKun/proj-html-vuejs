@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -35,5 +37,6 @@ export default {
   // text-align: center;
   // color: #2c3e50;
   // margin-top: 60px;
+  font-family: 'Nunito', sans-serif;
 }
 </style>

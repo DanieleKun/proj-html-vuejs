@@ -2,6 +2,7 @@
     <header>
         <div class="header_jumbo_container">
             <div class="bg_color">
+                <!-- header e navbar -->
                 <div class="container_header">
                     <a href="#"><img src="../assets/img/theme_eduprime_logo.png" alt="logo"></a>
                     <nav>
@@ -12,15 +13,38 @@
                                 </a>
                             </li>
                         </ul>
-
                         <button class="btn_yellow">
                             VIEW COURSES
                         </button>
                     </nav>
-
                 </div>
+
+                <!-- Jumbotron -->
+                <div class="container_jumbo">
+                    <h2 class="title_jumbo">
+                        Key to your succes
+                    </h2>
+
+                    <p>EduPrime is the most versatile WordPress theme for educational purposes, showcasting
+                        universities, courses, secondary school etc.</p>
+
+                    <div class="btn_container">
+                        <button class="btn_yellow">
+                            Search courses
+                        </button>
+
+                        <button class="btn_white">
+                            Apply for university
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
+        </div>
+
+        <div class="wave_container">
+            <img src="../assets/img/Wave-1.png" alt="">
         </div>
     </header>
 </template>
@@ -77,22 +101,54 @@ export default {
 <style scoped lang="scss">
 // My color
 $yellow_clr: #E9D758;
+
+
+// general
+ul {
+    display: inline-block;
+}
+
+button {
+    display: inline-block;
+}
+
+.btn_yellow {
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: $yellow_clr;
+    border: none;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+.btn_white {
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #E56768;
+    background-color: white;
+    border: none;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+
 .header_jumbo_container {
     background-image: url("../assets/img/theme_slider2_bg-1.jpg");
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    font-weight: 700;
+    color: white;
 
     .bg_color {
-        background-color: #E56768;
+        background-color: rgba($color: #E56768, $alpha: 0.8);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.8;
-
     }
 
     .container_header {
@@ -130,23 +186,32 @@ $yellow_clr: #E9D758;
             }
         }
 
-        .btn_yellow{
-            padding: 15px 25px;
-            border-radius: 25px;
-            color: white;
-            background-color: $yellow_clr;
-            border: none;
-            margin: 0 20px;
-        }
-
     }
 }
 
-ul{
-    display: inline-block;
+.container_jumbo {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+
+    .title_jumbo {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    p {
+        margin: 20px;
+    }
 }
 
-button {
-    display: inline-block;
+.wave_container{
+    position: relative;
+    img{
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 </style>
