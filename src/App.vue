@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <EPHeader/>
+    <EPMain/>
+    <EPFooter/>npm run serve
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import EPHeader from './components/EPHeader.vue'
+import EPMain from './components/EPMain.vue'
+import EPFooter from './components/EPFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    EPHeader,
+    EPMain,
+    EPFooter
   }
 }
 </script>
