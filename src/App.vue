@@ -30,6 +30,10 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
   // -webkit-font-smoothing: antialiased;
