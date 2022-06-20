@@ -30,11 +30,11 @@
 
                     <div class="btn_container">
                         <button class="btn_yellow">
-                            Search courses
+                            <font-awesome-icon icon="fa-solid fa-magnifying-glass" /> Search courses
                         </button>
 
                         <button class="btn_white">
-                            Apply for university
+                            <font-awesome-icon icon="fa-solid fa-user-plus" /> Apply for university
                         </button>
                     </div>
                 </div>

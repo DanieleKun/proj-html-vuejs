@@ -21,12 +21,18 @@
     </div>
 
     <div class="social_container">
-      <img src="../assets/img/theme_eduprime_logo.png" alt="">
+      <a href="#"><img src="../assets/img/theme_eduprime_logo.png" alt=""></a>
       <p>EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses,
         secondary school etc.</p>
-      <font-awesome-icon class="brand_icon facebook_icon" icon="fa-brands fa-facebook-f" />
-      <font-awesome-icon class="brand_icon" icon="fa-brands fa-twitter" />
-      <font-awesome-icon class="brand_icon" icon="fa-brands fa-instagram" />
+      <a href="#">
+        <font-awesome-icon class="brand_icon facebook_icon" icon="fa-brands fa-facebook-f" />
+      </a>
+      <a href="#">
+        <font-awesome-icon class="brand_icon" icon="fa-brands fa-twitter" />
+      </a>
+      <a href="#">
+        <font-awesome-icon class="brand_icon" icon="fa-brands fa-instagram" />
+      </a>
 
     </div>
 
@@ -93,6 +99,12 @@
       </div>
 
       <p>ModelTheme.All rights reserved.</p>
+    </div>
+
+    <div class="bact_top">
+      <a href="#">
+        <img src="../assets/img/back-to-top-arrow.svg" alt="">
+      </a>
     </div>
   </div>
 </template>
@@ -259,6 +271,11 @@ ul li {
 
   .search_container {
     padding-right: 10px;
+    text-align: right;
+
+    .search_bar {
+      position: relative;
+    }
 
     input {
       padding: 20px 10px;
@@ -272,21 +289,34 @@ ul li {
       padding: 20px;
       background-color: #E9D758;
       border-radius: 50%;
-      margin: -22px -50px;
+      position: absolute;
+      top: 0;
+      right: -5px;
     }
 
     h4 {
       color: white;
       margin: 10px 0;
       margin-top: 20px;
-      margin-left: 210px;
     }
 
     p {
       color: #E9D758;
-      margin: 20px 0;
-      margin-left: 120px;
+      margin: 40px 0;
       font-size: 15px;
+    }
+  }
+
+  .bact_top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 10%;
+    img {
+      background-color: #E9D758;
+      padding: 8px;
+      border-radius: 50%;
+      margin: 10px 20px;
     }
   }
 
@@ -294,20 +324,6 @@ ul li {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-
-    // .empty_button {
-    //   border: 1px solid white;
-    //   background-color: transparent;
-    //   padding: 5px 10px;
-    //   border-radius: 25px;
-    //   color: #ffffffCC;
-    //   font-size: 10px;
-    //   margin: 5px 5px;
-
-    //   a {
-    //     padding-top: 2px;
-    //   }
-    // }
   }
 }
 </style>

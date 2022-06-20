@@ -31,12 +31,86 @@
         <div class="nav_carousel">
 
           <div v-for="(item, i) in carousel" :key="i" class="img_carousel" :class="item.current ? 'active' : ''">
-          <img :src="item.urlImg" alt="">
-          <h5>{{item.text}}</h5>
+            <img :src="item.urlImg" alt="">
+            <h5>{{ item.text }}</h5>
+          </div>
+
+        </div>
+
+        <div class="carousel_content">
+          <div class="img_content">
+            <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="">
+          </div>
+
+          <div class="text_content">
+            <h2>
+              Law Faculty
+            </h2>
+
+            <p>
+              Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding
+              in the theory of law, but you will be able to understand how those principles are applied in practice
+              through a range of student-led activities and competitions.
+            </p>
+
+            <button class="btn_pink">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wawe">
+      <img src="../assets/svg/svg-0.svg" alt="">
+    </div>
+
+    <section class="time_line_container">
+
+      <div class="time_line">
+        <div class="title_time_line">
+          <img src="../assets/img/Clock-and-Bell.png" alt="">
+          <br>
+          <h2>University Year</h2>
+        </div>
+
+        <div class="time_line_content">
+
+          <div class="time_line_flex">
+            <div class="text_time_line">
+              <h4>Demo Classes</h4>
+              <p>In the first students try to accomodate with the teaching style and choose their optional courses.</p>
+            </div>
+
+            <div class="text_time_line">
+              <h4>Graduation Day</h4>
+              <p>On the day of graduation, all students gather for the ceremony and then network and party among others.
+              </p>
+            </div>
+          </div>
+
+          <img src="../assets/img/Timeline-Item.png" alt="">
+
+          <div class="time_line_flex2">
+            <div class="text_time_line2">
+              <h4>Orientation</h4>
+              <p>First day of the universuty year, all students gather for the opening ceremony and then network with others.</p>
+            </div>
+
+            <div class="text_time_line2">
+              <h4>Evaluation</h4>
+              <p>At the end of a semester, students take a general evaluation test for every subject they're learning.
+              </p>
+            </div>
           </div>
 
         </div>
       </div>
+    </section>
+
+    <section class="events_container">
+      <img src="../assets/img/upcoming-events-calendar-icon.png" alt="">
+      <h2>Upcoming Events</h2>
     </section>
   </main>
 </template>
@@ -45,36 +119,36 @@
 export default {
   name: 'EPMain',
   data() {
-        return {
-            carousel: [
-                {
-                    text: "Law faculty",
-                    urlImg: require("../assets/img/Gavel-v2.png"),
-                    current: true
-                },
-                {
-                    text: "Economy",
-                    urlImg: require("../assets/img/Coins-tabs-v2.png"),
-                    current: false
-                },
-                {
-                    text: "Medicine",
-                    urlImg: require("../assets/img/Medicine-tabs-v2.png"),
-                    current: false
-                },
-                {
-                    text: "Computer Science",
-                    urlImg: require("../assets/img/Computer-tabs-v2.png"),
-                    current: false
-                },
-                {
-                    text: "Graphic Design",
-                    urlImg: require("../assets/img/Palette-tabs-v2.png"),
-                    current: false
-                }
-            ]
+    return {
+      carousel: [
+        {
+          text: "Law faculty",
+          urlImg: require("../assets/img/Gavel-v2.png"),
+          current: true
+        },
+        {
+          text: "Economy",
+          urlImg: require("../assets/img/Coins-tabs-v2.png"),
+          current: false
+        },
+        {
+          text: "Medicine",
+          urlImg: require("../assets/img/Medicine-tabs-v2.png"),
+          current: false
+        },
+        {
+          text: "Computer Science",
+          urlImg: require("../assets/img/Computer-tabs-v2.png"),
+          current: false
+        },
+        {
+          text: "Graphic Design",
+          urlImg: require("../assets/img/Palette-tabs-v2.png"),
+          current: false
         }
+      ]
     }
+  }
 
 }
 </script>
@@ -85,6 +159,7 @@ export default {
 
 $primary_text: #3D404F;
 
+// first section style
 .first_section_bg {
   background-image: url(../assets/img/home-background.png);
   background-size: cover;
@@ -126,6 +201,7 @@ $primary_text: #3D404F;
   }
 }
 
+// carousel container style
 .carousel_container {
 
   text-align: center;
@@ -147,12 +223,15 @@ $primary_text: #3D404F;
 
   .nav_carousel {
     display: flex;
+    width: 70%;
+    margin: 20px auto;
   }
 
   .img_carousel {
     padding: 40px 60px;
     color: #E56768;
     border: 1px solid #ECECEE;
+    cursor: pointer;
 
     img {
       width: 100px;
@@ -171,5 +250,105 @@ $primary_text: #3D404F;
 
   }
 
+  .carousel_content {
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    text-align: left;
+
+    .img_content {
+      width: 50%;
+    }
+
+    .text_content {
+      width: 50%;
+
+      p {
+        color: #8b8b8a;
+        margin: 20px 0;
+      }
+    }
+  }
+
+}
+
+.wawe {
+  overflow: hidden;
+
+  img {
+    width: 180%;
+    display: block;
+  }
+}
+
+.time_line_container {
+  color: white;
+
+  .time_line {
+    background-color: #E56768;
+    text-align: center;
+    padding-top: 20px;
+
+    img {
+      width: 50px;
+      margin: 10px;
+    }
+
+    h2 {
+      display: inline;
+      background-color: #DB2A2C;
+      font-size: 40px;
+    }
+  }
+
+  .time_line_content {
+
+    h4{
+      font-size: 20px;
+      font-weight: 900;
+      margin: 10px 0;
+    }
+
+    img {
+      width: 1000px;
+    }
+
+    .time_line_flex {
+      display: flex;
+      justify-content: center;
+
+      .text_time_line {
+        width: 25%;
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+    }
+
+    .time_line_flex2 {
+      display: flex;
+      margin-left: 300px;
+
+      .text_time_line2 {
+        width: 25%;
+        margin-right: 100px;
+      }
+    }
+  }
+}
+
+.events_container{
+  background-color: #E56768;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+
+  img{
+    width: 50px;
+  }
+  
+  h2{
+    font-size: 50px;
+    font-weight: 900;
+  }
 }
 </style>

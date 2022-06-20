@@ -6,6 +6,7 @@ a{
 
 button {
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn_yellow {
@@ -23,6 +24,16 @@ button {
     border-radius: 25px;
     color: #E56768;
     background-color: white;
+    border: none;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+.btn_pink {
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: #E56768;
     border: none;
     margin: 0 20px;
     font-weight: 700;
