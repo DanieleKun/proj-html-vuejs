@@ -99,6 +99,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+@import '../assets/button.scss';
 // My color
 $yellow_clr: #E9D758;
 
@@ -107,31 +109,6 @@ $yellow_clr: #E9D758;
 ul {
     display: inline-block;
 }
-
-button {
-    display: inline-block;
-}
-
-.btn_yellow {
-    padding: 15px 25px;
-    border-radius: 25px;
-    color: white;
-    background-color: $yellow_clr;
-    border: none;
-    margin: 0 20px;
-    font-weight: 700;
-}
-
-.btn_white {
-    padding: 15px 25px;
-    border-radius: 25px;
-    color: #E56768;
-    background-color: white;
-    border: none;
-    margin: 0 20px;
-    font-weight: 700;
-}
-
 
 .header_jumbo_container {
     background-image: url("../assets/img/theme_slider2_bg-1.jpg");

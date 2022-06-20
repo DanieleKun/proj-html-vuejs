@@ -1,0 +1,43 @@
+$yellow_clr: #E9D758;
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    display: inline-block;
+}
+
+.btn_yellow {
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: $yellow_clr;
+    border: none;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+.btn_white {
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #E56768;
+    background-color: white;
+    border: none;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+.empty_button {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #ffffffCC;
+    font-size: 10px;
+    margin: 5px 5px;
+
+    a {
+      padding-top: 2px;
+    }
+  }

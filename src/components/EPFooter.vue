@@ -170,6 +170,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import '../assets/button.scss';
+
 $primary_pink: #E56768;
 
 // links style
@@ -300,19 +302,19 @@ ul li {
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    .empty_button {
-      border: 1px solid white;
-      background-color: transparent;
-      padding: 5px 10px;
-      border-radius: 25px;
-      color: #ffffffCC;
-      font-size: 10px;
-      margin: 5px 5px;
+    // .empty_button {
+    //   border: 1px solid white;
+    //   background-color: transparent;
+    //   padding: 5px 10px;
+    //   border-radius: 25px;
+    //   color: #ffffffCC;
+    //   font-size: 10px;
+    //   margin: 5px 5px;
 
-      a {
-        padding-top: 2px;
-      }
-    }
+    //   a {
+    //     padding-top: 2px;
+    //   }
+    // }
   }
 }
 </style>
