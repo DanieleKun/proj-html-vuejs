@@ -44,13 +44,13 @@
 
       <div class="link_foot">
         <h3>Networking</h3>
-        <!-- <ul>
+        <ul>
           <li v-for="(itemLink, j) in linksFootNet" :key="j">
             <a :href="itemLink.url">
               {{ itemLink.text }}
             </a>
           </li>
-        </ul> -->
+        </ul>
       </div>
     </div>
 
@@ -127,43 +127,36 @@ export default {
           text: "Purchase Theme",
           url: "#",
         }
+      ],
+
+      linksFootNet: [
+        {
+          text: "Purchase Theme",
+          url: "#"
+        },
+        {
+          text: "Our Benefits",
+          url: "#",
+        },
+        {
+          text: "Our Team",
+          url: "#",
+        },
+        {
+          text: "Our Services",
+          url: "#",
+        },
+        {
+          text: "Other Products",
+          url: "#",
+        },
+        {
+          text: "My account",
+          url: "#",
+        }
       ]
     }
   },
-
-
-  // data() {
-  //   return {
-  //     linksFootNet: [
-  //       {
-  //         text: "Purchase Theme",
-  //         url: "#"
-  //       },
-  //       {
-  //         text: "Our Benefits",
-  //         url: "#",
-  //       },
-  //       {
-  //         text: "Our Team",
-  //         url: "#",
-  //       },
-  //       {
-  //         text: "Our Services",
-  //         url: "#",
-  //       },
-  //       {
-  //         text: "Other Products",
-  //         url: "#",
-  //       },
-  //       {
-  //         text: "My account",
-  //         url: "#",
-  //       }
-  //     ]
-  //   }
-  // },
-
-
 
 }
 </script>
@@ -289,7 +282,7 @@ ul li {
       margin-left: 210px;
     }
 
-    p{
+    p {
       color: #E9D758;
       margin: 20px 0;
       margin-left: 120px;
