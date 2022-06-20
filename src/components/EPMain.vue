@@ -232,6 +232,7 @@ $primary_text: #3D404F;
     color: #E56768;
     border: 1px solid #ECECEE;
     cursor: pointer;
+    box-shadow: 0 10px 5px #dedede;
 
     img {
       width: 100px;
