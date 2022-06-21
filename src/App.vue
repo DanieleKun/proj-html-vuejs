@@ -31,6 +31,21 @@ export default {
   box-sizing: border-box;
 }
 
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background:#F7F8FA;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #E56768;
+    border-radius: 20px;
+    border: 2px solid #E56768;
+  }
+
 a {
   text-decoration: none;
 }

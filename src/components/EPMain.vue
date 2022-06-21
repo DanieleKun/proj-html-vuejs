@@ -160,7 +160,7 @@
 
 
       <div class="courses_card_container">
-              <h2>Latest Courses</h2>
+        <h2>Latest Courses</h2>
         <div class="courses_card">
           <img src="../assets/img/Decisions-icon.png" alt="">
           <h3>Make Better Decisions</h3>
@@ -175,7 +175,7 @@
           </button>
         </div>
 
-                <div class="courses_card">
+        <div class="courses_card">
           <img src="../assets/img/Speaker-icon.png" alt="">
           <h3>How to be a speacker</h3>
           <h5>
@@ -189,7 +189,7 @@
           </button>
         </div>
 
-                <div class="courses_card">
+        <div class="courses_card">
           <img src="../assets/img/Network-icon.png" alt="">
           <h3>Network Introductions</h3>
           <h5>
@@ -203,7 +203,7 @@
           </button>
         </div>
 
-                <div class="courses_card">
+        <div class="courses_card">
           <img src="../assets/img/Brand-icon.png" alt="">
           <h3>Brand Management</h3>
           <h5>
@@ -218,6 +218,71 @@
         </div>
       </div>
 
+    </section>
+
+    <section class="info_container">
+      <div class="col_text_info">
+        <img src="../assets/img/Exam-icon.png" alt="">
+        <h2>The Most Efficient examination method</h2>
+        <p>EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of
+          our students. Every teacher from our university has an influence on how students are evalutaded at his/her
+          subject.</p>
+        <button class="btn_pink">Discover the Method</button>
+      </div>
+
+      <div class="col_img_info">
+        <img src="../assets/img/Exam-Illustration.png" alt="">
+      </div>
+
+      <div class="col_img_info">
+        <img src="../assets/img/Girl-Illustration.png" alt="">
+      </div>
+
+      <div class="col_text_info">
+        <img src="../assets/img/Exam-icon-1.png" alt="">
+        <h2>Variable fees for international students</h2>
+        <p>EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate the evaluation of
+          our students. Every teacher from our university has an influence on how students are evalutaded at his/her
+          subject.</p>
+        <button class="btn_pink">List of Fees</button>
+      </div>
+
+    </section>
+
+    <section class="sub_bg">
+      <div class="sub_container">
+        <div class="title_sub">
+          <h2>Subscribe Now to Our Newsletter !</h2>
+        </div>
+
+        <div class="search_sub">
+          <div class="search_bar">
+            <input type="text" placeholder="Search...">
+            <font-awesome-icon class="icon_search" icon="fa-solid fa-magnifying-glass" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners_container">
+      <div class="text">
+        <h2>Partners</h2>
+      <p>Leverage agile framework to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy.</p>
+      </div>
+
+      <div class="img_partners_container">
+        <img class="big_img" src="../assets/img/partner-1.png" alt="">
+        <img class="little_img" src="../assets/img/partner-2.png" alt="">
+        <img class="big_img" src="../assets/img/partner-3.png" alt="">
+        <img class="big_img" src="../assets/img/partner-4.png" alt="">
+        <img class="little_img" src="../assets/img/partner-5.png" alt="">
+        <img class="big_img" src="../assets/img/partner-6.png" alt="">
+        <img class="little_img" src="../assets/img/partner-7.png" alt="">
+      </div>
+
+      <div class="wawe_bg">
+        <img src="../assets/img/background-wave3.png" alt="">
+      </div>
     </section>
   </main>
 </template>
@@ -525,13 +590,14 @@ $primary_text: #3D404F;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .courses_card {
       text-align: center;
       width: 220px;
       height: 200px;
       color: #8b8b8a;
       border: 1px solid #ECECEE;
-      box-shadow: 0 10px 5px #dedede;
+      box-shadow: 5px 5px 5px #dedede;
       margin: 40px 0;
 
       h3 {
@@ -551,6 +617,133 @@ $primary_text: #3D404F;
         width: 70px;
         margin: 10px 0;
       }
+    }
+  }
+}
+
+.info_container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .col_text_info {
+    width: 40%;
+    margin: 20px 0;
+
+    h2 {
+      font-weight: 900;
+      font-size: 40px;
+      color: #3D404F;
+      margin-top: 10px;
+    }
+
+    img {
+      width: 70px;
+    }
+
+    p {
+      color: #3D404F;
+      margin: 30px 0;
+    }
+  }
+
+  .col_img_info {
+    width: 50%;
+    margin: 20px 0;
+
+    img {
+      width: 500px;
+    }
+  }
+}
+
+.sub_bg {
+  background-color: #E56768;
+
+  .sub_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+
+    .title_sub {
+      color: white;
+
+      h2 {
+        font-weight: 900;
+      }
+    }
+
+    .search_bar {
+      position: relative;
+    }
+
+    input {
+      padding: 20px 10px;
+      padding-right: 150px;
+      border: none;
+      border-radius: 25px;
+    }
+
+    .icon_search {
+      color: white;
+      padding: 20px;
+      background-color: #E9D758;
+      border-radius: 50%;
+      // position: absolute;
+      // top: 0;
+      // right: -5px;
+      margin: -22px -45px;
+    }
+  }
+}
+
+.partners_container{
+
+  .text{
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+
+    h2{
+      color: #3D404F;
+      font-weight: 900;
+      font-size: 30px;
+    }
+
+    p{
+      color: #3D404F;
+      margin: 20px 0;
+    }
+  }
+
+  .img_partners_container{
+    width: 70%;
+    margin: 30px auto;
+
+    .big_img{
+      width: 70px;
+    }
+
+    .little_img{
+      width: 180px;
+    }
+
+    img{
+      margin: 0 10px;
+      filter:opacity(40%)
+    }
+  }
+
+  .wawe_bg{
+    background-color: #F7F8FA;
+    img{
+      width: 100%;
+      height: 200px;
     }
   }
 }

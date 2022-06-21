@@ -8,8 +8,10 @@
                     <nav>
                         <ul>
                             <li v-for="(link, i) in links" :key="i">
-                                <a :href="link.url" :class="link.current ? 'active' : ''">
+                                <a :href="link.url" :class="link.current ? 'active' : ''"
+                                    @click="link.current = !link.current">
                                     {{ link.text }}
+                                    <font-awesome-icon class="icon_down" icon="fa-solid fa-caret-down" />
                                 </a>
                             </li>
                         </ul>
@@ -95,11 +97,13 @@ export default {
     },
 
     methods: {
-        changeActive(link){
-            this.links.forEach(element => {
-                element.current = false;
+        changeCurrent() {
+            this.links.forEach(el => {
+                if (el.current === false)
+                    el.current = true;
+                else
+                    el.current = false
             });
-            link.current = true;
         }
     }
 
@@ -108,7 +112,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 @import '../assets/button.scss';
 // My color
 $yellow_clr: #E9D758;
@@ -173,6 +176,12 @@ ul {
         }
 
     }
+
+    .icon_down {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-bottom: 2px;
+    }
 }
 
 .container_jumbo {
@@ -190,9 +199,10 @@ ul {
     }
 }
 
-.wave_container{
+.wave_container {
     position: relative;
-    img{
+
+    img {
         width: 100%;
         display: block;
         position: absolute;
