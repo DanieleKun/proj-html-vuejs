@@ -58,7 +58,7 @@ export default {
                 {
                     text: "Home",
                     url: "#",
-                    current: true
+                    current: false
                 },
                 {
                     text: "Courses",
@@ -91,6 +91,15 @@ export default {
                     current: false
                 }
             ]
+        }
+    },
+
+    methods: {
+        changeActive(link){
+            this.links.forEach(element => {
+                element.current = false;
+            });
+            link.current = true;
         }
     }
 

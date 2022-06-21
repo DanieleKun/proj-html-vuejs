@@ -11,10 +11,19 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faMoneyBill1 } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-regular-svg-icons'
+import { faEye } from '@fortawesome/free-regular-svg-icons'
 
 
 
-library.add(faFacebookF, faTwitter, faInstagram, faMagnifyingGlass, faUserPlus)
+
+
+
+
+library.add(faFacebookF, faTwitter, faInstagram, faMagnifyingGlass, faUserPlus, faCalendarDays, faPlus, faMoneyBill1, faUser, faEye)
 
 Vue.config.productionTip = false
 

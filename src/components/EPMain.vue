@@ -94,7 +94,8 @@
           <div class="time_line_flex2">
             <div class="text_time_line2">
               <h4>Orientation</h4>
-              <p>First day of the universuty year, all students gather for the opening ceremony and then network with others.</p>
+              <p>First day of the universuty year, all students gather for the opening ceremony and then network with
+                others.</p>
             </div>
 
             <div class="text_time_line2">
@@ -111,6 +112,112 @@
     <section class="events_container">
       <img src="../assets/img/upcoming-events-calendar-icon.png" alt="">
       <h2>Upcoming Events</h2>
+
+      <div class="card_container">
+        <div class="my_card">
+          <h3>Coaching Sessions</h3>
+          <h6>
+            <font-awesome-icon icon="fa-solid fa-calendar-days" /> 20 May 21:30 PM
+          </h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corrupti! [...]</p>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-solid fa-plus" /> Find More
+          </button>
+        </div>
+
+        <div class="my_card">
+          <h3>Coaching Sessions</h3>
+          <h6>
+            <font-awesome-icon icon="fa-solid fa-calendar-days" /> 24 Ma3 18:00 PM
+          </h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corrupti! [...]</p>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-solid fa-plus" /> Find More
+          </button>
+        </div>
+
+        <div class="my_card">
+          <h3>Coaching Sessions</h3>
+          <h6>
+            <font-awesome-icon icon="fa-solid fa-calendar-days" /> 12 Feb 13:30 PM
+          </h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, corrupti! [...]</p>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-solid fa-plus" /> Find More
+          </button>
+        </div>
+      </div>
+
+      <span><button class="btn_yellow">View All Events</button></span>
+
+    </section>
+
+    <section class="latest_courses_container">
+      <div class="wawe_container">
+        <img src="../assets/svg/svg-1.svg" alt="">
+      </div>
+
+
+
+      <div class="courses_card_container">
+              <h2>Latest Courses</h2>
+        <div class="courses_card">
+          <img src="../assets/img/Decisions-icon.png" alt="">
+          <h3>Make Better Decisions</h3>
+          <h5>
+            <font-awesome-icon icon="fa-regular fa-user" /> Teacher: <b>James Colins</b>
+          </h5>
+          <h5>
+            <font-awesome-icon icon="fa-solid fa-money-bill-1" /> Price: <b>€21.00</b>
+          </h5>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-regular fa-eye" /> View Course
+          </button>
+        </div>
+
+                <div class="courses_card">
+          <img src="../assets/img/Speaker-icon.png" alt="">
+          <h3>How to be a speacker</h3>
+          <h5>
+            <font-awesome-icon icon="fa-regular fa-user" /> Teacher: <b>James Colins</b>
+          </h5>
+          <h5>
+            <font-awesome-icon icon="fa-solid fa-money-bill-1" /> Price: <b>Free</b>
+          </h5>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-regular fa-eye" /> View Course
+          </button>
+        </div>
+
+                <div class="courses_card">
+          <img src="../assets/img/Network-icon.png" alt="">
+          <h3>Network Introductions</h3>
+          <h5>
+            <font-awesome-icon icon="fa-regular fa-user" /> Teacher: <b>James Colins</b>
+          </h5>
+          <h5>
+            <font-awesome-icon icon="fa-solid fa-money-bill-1" /> Price: <b>Free</b>
+          </h5>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-regular fa-eye" /> View Course
+          </button>
+        </div>
+
+                <div class="courses_card">
+          <img src="../assets/img/Brand-icon.png" alt="">
+          <h3>Brand Management</h3>
+          <h5>
+            <font-awesome-icon icon="fa-regular fa-user" /> Teacher: <b>James Colins</b>
+          </h5>
+          <h5>
+            <font-awesome-icon icon="fa-solid fa-money-bill-1" /> Price: <b>Free</b>
+          </h5>
+          <button class="btn_pink_little">
+            <font-awesome-icon icon="fa-regular fa-eye" /> View Course
+          </button>
+        </div>
+      </div>
+
     </section>
   </main>
 </template>
@@ -158,6 +265,10 @@ export default {
 @import '../assets/button.scss';
 
 $primary_text: #3D404F;
+
+.btn_yellow {
+  margin: 30px 0;
+}
 
 // first section style
 .first_section_bg {
@@ -304,7 +415,7 @@ $primary_text: #3D404F;
 
   .time_line_content {
 
-    h4{
+    h4 {
       font-size: 20px;
       font-weight: 900;
       margin: 10px 0;
@@ -337,19 +448,110 @@ $primary_text: #3D404F;
   }
 }
 
-.events_container{
+.events_container {
   background-color: #E56768;
   text-align: center;
   padding-top: 50px;
   color: white;
 
-  img{
+  img {
     width: 50px;
   }
-  
-  h2{
+
+  h2 {
     font-size: 50px;
     font-weight: 900;
+  }
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+
+  .my_card {
+    width: 300px;
+    background-color: white;
+    color: #8b8b8a;
+    padding: 20px;
+    border-radius: 10px;
+    height: 170px;
+    margin: 50px 0;
+
+    h3 {
+      color: #3D404F;
+      font-weight: 900;
+    }
+
+    h6 {
+      margin: 5px;
+    }
+
+    .btn_pink_little {
+      box-shadow: 5px 10px 40px #000000CC;
+      margin-top: 20px;
+    }
+  }
+
+
+
+}
+
+.wawe_container {
+  overflow: hidden;
+
+  img {
+    width: 150%;
+    display: block;
+    margin-left: -15px;
+    margin-top: -1px;
+  }
+}
+
+.latest_courses_container {
+  background-color: white;
+
+  h2 {
+    font-weight: 900;
+    color: #3D404F;
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .courses_card_container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .courses_card {
+      text-align: center;
+      width: 220px;
+      height: 200px;
+      color: #8b8b8a;
+      border: 1px solid #ECECEE;
+      box-shadow: 0 10px 5px #dedede;
+      margin: 40px 0;
+
+      h3 {
+        color: #3D404F;
+        font-weight: 900;
+      }
+
+      h5 {
+        margin: 10px;
+      }
+
+      b {
+        color: #3D404F;
+      }
+
+      img {
+        width: 70px;
+        margin: 10px 0;
+      }
+    }
   }
 }
 </style>
