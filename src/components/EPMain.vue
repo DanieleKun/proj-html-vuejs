@@ -267,7 +267,8 @@
     <section class="partners_container">
       <div class="text">
         <h2>Partners</h2>
-      <p>Leverage agile framework to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy.</p>
+        <p>Leverage agile framework to provide a robust synopsis for high level overviews. Iterative approaches to
+          corporate strategy.</p>
       </div>
 
       <div class="img_partners_container">
@@ -412,6 +413,16 @@ $primary_text: #3D404F;
 
     img {
       width: 100px;
+    }
+
+    &:hover {
+      background-color: #E56768;
+      color: white;
+      border: none;
+
+      img {
+        filter: brightness(500%);
+      }
     }
   }
 
@@ -702,51 +713,52 @@ $primary_text: #3D404F;
   }
 }
 
-.partners_container{
+.partners_container {
 
-  .text{
+  .text {
     width: 30%;
     margin: 20px auto;
     text-align: center;
 
-    h2{
+    h2 {
       color: #3D404F;
       font-weight: 900;
       font-size: 30px;
     }
 
-    p{
+    p {
       color: #3D404F;
       margin: 20px 0;
     }
   }
 
-  .img_partners_container{
+  .img_partners_container {
     width: 70%;
     margin: 30px auto;
 
-    .big_img{
+    .big_img {
       width: 70px;
     }
 
-    .little_img{
+    .little_img {
       width: 180px;
     }
 
-    img{
+    img {
       margin: 0 10px;
-      filter:opacity(40%);
+      filter: opacity(40%);
     }
 
-    a img:hover{
+    a img:hover {
       filter: none;
     }
 
   }
 
-  .wawe_bg{
+  .wawe_bg {
     background-color: #F7F8FA;
-    img{
+
+    img {
       width: 100%;
       height: 200px;
     }
