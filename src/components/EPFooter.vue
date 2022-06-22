@@ -183,6 +183,10 @@ $primary_pink: #E56768;
 a {
   text-decoration: none;
   color: #ffffffCC;
+
+  &:hover{
+    color: white;
+  }
 }
 
 ul li {
