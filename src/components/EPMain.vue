@@ -271,13 +271,13 @@
       </div>
 
       <div class="img_partners_container">
-        <img class="big_img" src="../assets/img/partner-1.png" alt="">
-        <img class="little_img" src="../assets/img/partner-2.png" alt="">
-        <img class="big_img" src="../assets/img/partner-3.png" alt="">
-        <img class="big_img" src="../assets/img/partner-4.png" alt="">
-        <img class="little_img" src="../assets/img/partner-5.png" alt="">
-        <img class="big_img" src="../assets/img/partner-6.png" alt="">
-        <img class="little_img" src="../assets/img/partner-7.png" alt="">
+        <a href="#"><img class="big_img" src="../assets/img/partner-1.png" alt=""></a>
+        <a href="#"><img class="little_img" src="../assets/img/partner-2.png" alt=""></a>
+        <a href="#"><img class="big_img" src="../assets/img/partner-3.png" alt=""></a>
+        <a href="#"><img class="big_img" src="../assets/img/partner-4.png" alt=""></a>
+        <a href="#"><img class="little_img" src="../assets/img/partner-5.png" alt=""></a>
+        <a href="#"><img class="big_img" src="../assets/img/partner-6.png" alt=""></a>
+        <a href="#"><img class="little_img" src="../assets/img/partner-7.png" alt=""></a>
       </div>
 
       <div class="wawe_bg">
@@ -735,8 +735,13 @@ $primary_text: #3D404F;
 
     img{
       margin: 0 10px;
-      filter:opacity(40%)
+      filter:opacity(40%);
     }
+
+    a img:hover{
+      filter: none;
+    }
+
   }
 
   .wawe_bg{

@@ -96,16 +96,16 @@ export default {
         }
     },
 
-    methods: {
-        changeCurrent() {
-            this.links.forEach(el => {
-                if (el.current === false)
-                    el.current = true;
-                else
-                    el.current = false
-            });
-        }
-    }
+    // methods: {
+    //     changeCurrent() {
+    //         this.links.forEach(el => {
+    //             if (el.current === false)
+    //                 el.current = true;
+    //             else
+    //                 el.current = false
+    //         });
+    //     }
+    // }
 
 }
 </script>
