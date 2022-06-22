@@ -679,6 +679,7 @@ $primary_text: #3D404F;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 30px 0;
 
     .title_sub {
